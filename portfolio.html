@@ -4,11 +4,17 @@
 		<meta charset="utf-8">
 		<title>Portfolio</title>
 		<style>
-				body { background-image: url("http://www.arorallc.com/i/2017/01/light-abstract-wallpaper-high-resolution.jpg") ;
-					   background-repeat: no-repeat; }
+				body 
+				{background-color: #5e9bff;}
+
+
+
 			h1 { text-align: center; }
 			h1 { color: #000000; }
 			h2 { text-align: center; }
+			h3 { text-align: center; }
+			h3 { font-size: 35px;}
+			h3 {text-decoration: underline;}
 		    ul { list-style-type: none;
 			     margin: 0;
 			     padding: 0;
@@ -24,6 +30,14 @@
                    text-decoration: none; }
 
             li a:hover { background-color: #c0f6f7; }
+            <center>
+  <video width="320" height="150" controls>
+    <source src="Videos/Androidappvideo.mp4" type="video/mp4">
+    
+    
+  </video>
+</center> 
+            
 		</style>
 	</head>
 	<body>
@@ -35,7 +49,32 @@
             </ul>
 	
 		    <h1>Edwin's Portfolio Page!</h1>
-		    <h2><img src="images/Technology.jpg" height="250"></h2>
-	    	
-	</body>
+		    
+	    	<h3>Android App Project</h3>
+	<p> Our game “Space Adventure” was made similarly to the game “Flappy Bird” in which
+the player jumps between two obstacles while being dragged down by gravity. Throughout
+creating the app my partner and I had various problems when coding.The first and biggest
+problem was the satellite movement, when the app was booted the top satellite was stuck at the
+bottom of the screen while the bottom moved at the top then proceeded to be stuck when the
+edge was reached. The solution was strange, the top satellite’s y-value ended up being smaller
+than the bottom and the movement was more consistent for both satellites when I changed the
+x-value to 200. The second biggest problem was with the satellite size and position. Whenever
+the satellite reached the edge of the screen, the bottom sprite would clip into the top sprite, this
+confused me and my partner since we couldn’t tell what the problem was, until we started
+investigating the sprite’s sizes. Although the designer tab displayed differently, the image sizes
+were too large for the emulator, this caused collision issues whenever the sprites were told to
+reset, we didn’t realize this until we had the emulator working and we quickly lowered their
+sizes. With the satellite gravity working properly, I programed the score to be changed and a
+point sound to be played whenever the satellites met with the edge, this was a crucial part of how
+our scoring system worked. Individually, I worked on the sound design and the score system for
+the satellites. I used a label for the score and a simple math block to add 100 points.</p>
+	<video width="400" controls>
+  <source src="Videos/Androidappvideo.mp4" type="video/mp4">
+  <source src="Videos/Androidappvideo.mp4" type="video/mp4">
+  
+</video>
+<a href="/SpaceGame/Spacegame.aia">Download aia file</a>
+<a href="/SpaceGame/Spacegame.apk">Download apk file</a>
+</body>
+	
 </html>
