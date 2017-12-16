@@ -1,44 +1,77 @@
 <!doctype html>
 <html lang="en">
-		<head profile="https://my-portfolio-edwinledezma.c9users.io/index.html">
-<link rel="icon" 
-      type="image/png" 
-      href="http://example.com/myicon.png">
+		<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta charset="utf-8">
+		<meta name="description" content="Home Page">
+        <meta name="author" content="Edwin Ledezma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Home</title>
-		<style>
-			body { background-image: url("http://www.download-hd-wallpapers.com/wp-content/uploads/2014/08/black-abstract-background1.jpg");
-	               background-repeat:no-repeat;}		
-			h1 { text-align: center; }
-			h1 { color: #FFFFFF; }
-			h2 { text-align: center; }
-			ul { list-style-type: none;
+<style>
+.navbar {overflow: hidden;
+    background-color: #333;
+    font-family: Arial;}
+.navbar a {float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+.dropdown {float: left;
+    overflow: hidden;}
+.dropdown .dropbtn {font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;}
+.navbar a:hover, .dropdown:hover .dropbtn {background-color: red;}
+.dropdown-content {display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+.dropdown-content a {float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+			
+			body {background-image: url("http://www.download-hd-wallpapers.com/wp-content/uploads/2014/08/black-abstract-background1.jpg");
+	              background-repeat:no-repeat;}		
+			h1 {text-align: center; }
+			h1 {color: #FFFFFF; }
+			h2 {text-align: center; }
+			ul {list-style-type: none;
 			     margin: 0;
 			     padding: 0;
 			     overflow: hidden;
 			     background-color: #333; }
 
-            li { float: left; }
-
-            li a { display: block;
-                   color: white;
-                   text-align: center;
-                   padding: 14px 16px;
-                   text-decoration: none; }
-
-            li a:hover { background-color: #000000; }
-            p {font-size:110%; }
-            p {text-align: center; }
-            p { color: #FFFFFF; 
+            
 		</style>
 	</head>
 	<body>
-	        <ul>
-	        	<li><a class="index.html" href="index.html">Home</a></li>
-	        	<li><a class="portfolio.html" href="portfolio.html">Portfolio</a></li>
-	        	<li><a href="contact.html" href="contact.html">Contact</a></li>
-	        	<li><a href="#about">About</a></li>
-            </ul>
+	        <div class="navbar">
+  <a class="index.html" href="index.html">Home</a>
+  <a class="portfolio.html" href="portfolio.html">Portfolio</a>
+  <a class="contact.html" href="contact.html"> Contact</a>
+  <a class="about.html" href="about.html">About Me</a>
+  <div class="dropdown">
+    <button class="dropbtn">Projects 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a class="androidapp.html" href="androidapp.html">Android App</a>
+      <a class="python.html" href="python.html">Python Interactive Fiction</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
 		    <h1>Edwin's Home Page!</h1>
 		    <p>This is my webpage that I am creating in my computer science and engineering class.</p>
 		    <h2><img src="images/CV.jpg" height="250"></h2>

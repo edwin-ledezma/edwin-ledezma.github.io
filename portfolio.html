@@ -1,17 +1,54 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<meta charset="utf-8">
+		<meta name="description" content="Portfolio">
+        <meta name="keywords" content="HTML,CSS">
+        <meta name="author" content="Edwin Ledezma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio</title>
-		<style>
-				body 
-				{background-color: #5e9bff;}
-
-
-
+<style>
+.navbar {overflow: hidden;
+    background-color: #333;
+    font-family: Arial;}
+.navbar a {float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+.dropdown {float: left;
+    overflow: hidden;}
+.dropdown .dropbtn {font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;}
+.navbar a:hover, .dropdown:hover .dropbtn {background-color: red;}
+.dropdown-content {display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+.dropdown-content a {float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+				
+			body {background-color: #5e9bff;}
 			h1 { text-align: center; }
 			h1 { color: #000000; }
+			
 			h2 { text-align: center; }
+			h2 { font-size: 35px;}
+			h2 {text-decoration: underline;}
 			h3 { text-align: center; }
 			h3 { font-size: 35px;}
 			h3 {text-decoration: underline;}
@@ -20,61 +57,33 @@
 			     padding: 0;
 			     overflow: hidden;
 			     background-color: #333; }
-
-            li { float: left; }
-
-            li a { display: block;
-                   color: white;
-                   text-align: center;
-                   padding: 14px 16px;
-                   text-decoration: none; }
-
-            li a:hover { background-color: #c0f6f7; }
-            <center>
-  <video width="320" height="150" controls>
+	<center>
+  	<video width="320" height="150" controls>
     <source src="Videos/Androidappvideo.mp4" type="video/mp4">
-    
-    
-  </video>
-</center> 
-            
+   	</video>
+	</center> 
+         
 		</style>
 	</head>
 	<body>
-		    <ul>
-	        	<li><a class="index.html" href="index.html">Home</a></li>
-	        	<li><a class="portfolio.html" href="portfolio.html">Portfolio</a></li>
-	        	<li><a class="contact.html" href="contact.html"> Contact</a></li>
-	        	<li><a href="#about">About</a></li>
-            </ul>
+		  
+		    <div class="navbar">
+  <a class="index.html" href="index.html">Home</a>
+  <a class="portfolio.html" href="portfolio.html">Portfolio</a>
+  <a class="contact.html" href="contact.html"> Contact</a>
+  <a class="about.html" href="about.html">About Me</a>
+  <div class="dropdown">
+    <button class="dropbtn">Projects 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	  <a class="androidapp.html" href="androidapp.html">Android App</a>
+      <a class="python.html" href="python.html">Python Interactive Fiction</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+</div>
 	
 		    <h1>Edwin's Portfolio Page!</h1>
-		    
-	    	<h3>Android App Project</h3>
-	<p> Our game “Space Adventure” was made similarly to the game “Flappy Bird” in which
-the player jumps between two obstacles while being dragged down by gravity. Throughout
-creating the app my partner and I had various problems when coding.The first and biggest
-problem was the satellite movement, when the app was booted the top satellite was stuck at the
-bottom of the screen while the bottom moved at the top then proceeded to be stuck when the
-edge was reached. The solution was strange, the top satellite’s y-value ended up being smaller
-than the bottom and the movement was more consistent for both satellites when I changed the
-x-value to 200. The second biggest problem was with the satellite size and position. Whenever
-the satellite reached the edge of the screen, the bottom sprite would clip into the top sprite, this
-confused me and my partner since we couldn’t tell what the problem was, until we started
-investigating the sprite’s sizes. Although the designer tab displayed differently, the image sizes
-were too large for the emulator, this caused collision issues whenever the sprites were told to
-reset, we didn’t realize this until we had the emulator working and we quickly lowered their
-sizes. With the satellite gravity working properly, I programed the score to be changed and a
-point sound to be played whenever the satellites met with the edge, this was a crucial part of how
-our scoring system worked. Individually, I worked on the sound design and the score system for
-the satellites. I used a label for the score and a simple math block to add 100 points.</p>
-	<video width="400" controls>
-  <source src="Videos/Androidappvideo.mp4" type="video/mp4">
-  <source src="Videos/Androidappvideo.mp4" type="video/mp4">
-  
-</video>
-<a href="/SpaceGame/Spacegame.aia">Download aia file</a>
-<a href="/SpaceGame/Spacegame.apk">Download apk file</a>
 </body>
-	
 </html>
