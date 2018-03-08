@@ -2,9 +2,9 @@
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title>Android App</title>
+		<title>Python Hangman Game</title>
 		<meta name="description" content="Android App Project">
-        <meta name="keywords" content="Android App,MIT App Inventor">
+        <meta name="keywords" content="Python,Hangman">
         <meta name="author" content="Edwin Ledezma">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
@@ -46,6 +46,14 @@
 			h2 { text-align: center; }
 			h2 { text-decoration: underline;}
 			h2 { font-size: 23px;}
+			h5 { text-align: center; }
+			h5 { text-align: center; }
+			h5 { text-decoration: underline;}
+			h5 { font-size: 23px;}
+			p.WR { text-align: center; }
+			p.WR { font-size: 18px;}
+			p.WN { text-align: center; }
+			p.WN { font-size: 18px;}
  
 </style>
 	</head>
@@ -67,33 +75,30 @@
     </div>
   </div> 
 </div>
-	<h1>Android App Project</h1>
+	<h1>Python Hangman Game</h1>
 	
 	<h2>Written Response</h2>
 	
-	<p> Our game "Space Adventure" was made similarly to the game "Flappy Bird" in which
-the player jumps between two obstacles while being dragged down by gravity. Throughout
-creating the app my partner and I had various problems when coding.The first and biggest
-problem was the satellite movement, when the app was booted the top satellite was stuck at the
-bottom of the screen while the bottom moved at the top then proceeded to be stuck when the
-edge was reached. The solution was strange, the top satellite's y-value ended up being smaller
-than the bottom and the movement was more consistent for both satellites when I changed the
-x-value to 200. The second biggest problem was with the satellite size and position. Whenever
-the satellite reached the edge of the screen, the bottom sprite would clip into the top sprite, this
-confused me and my partner since we couldn't tell what the problem was, until we started
-investigating the sprite's sizes. Although the designer tab displayed differently, the image sizes
-were too large for the emulator, this caused collision issues whenever the sprites were told to
-reset, we didn't realize this until we had the emulator working and we quickly lowered their
-sizes. With the satellite gravity working properly, I programed the score to be changed and a
-point sound to be played whenever the satellites met with the edge, this was a crucial part of how
-our scoring system worked. Individually, I worked on the sound design and the score system for
-the satellites. I used a label for the score and a simple math block to add 100 points.</p>
+	<p class="WR"> For this project my partner and I decided to code a game of Hangman. One difficulty that we encountered was that our code would not print the hangman display
+	               when the user had an incorrect guess. We fixed the problem by globally defining 'turns'. Another difficulty that my partner and I encountered was trying to
+	               integrate a function into another. We solved the problem by placing the code for calling the second function in a better location in the first function. One
+	               part of the code that I completed independently was the graphics displaying the hanging man. </p>
+	
+	<h5>Written Narrartion</h5>
+	
+	<p class="WN">The video below shows the running of our program. My partner and I coded a game of hangman using python.
+	              In the beginning of the video, it shows how the game starts up. It then shows the user playing the game 
+	              and what happens when you win. In the second go around, the video shows what happens after every incorrect 
+	              guess and what happens when you finally lose the game.</p>
+	
     <video width="400" controls>
-    <source src="Videos/Androidappvideo.mp4" type="video/mp4">
-    <source src="Videos/Androidappvideo.mp4" type="video/mp4">
+    <source src="Videos/PythonHangmanGameVideo.mp4" type="video/mp4">
+    <source src="Videos/PythonHangmanGameVideo.mp4" type="video/mp4">
     </video>
-<a href="/SpaceGame/Spacegame.aia">Download aia file</a>
-<a href="/SpaceGame/Spacegame.apk">Download apk file</a>
+<a href="https://github.com/edwin-ledezma/pythongame" > Link to my respository</a>
+<a href="/pythongame/FinalCodeEL.py" download>Download py file</a>
+<h3><img src="pythongame/Abstraction.png" height="450"></h3>
+<h4><img src="pythongame/FcallingF.png" height="450"></h4>
 
 </body>
 </html>
