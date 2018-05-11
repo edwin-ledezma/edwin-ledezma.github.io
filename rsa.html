@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>RSA Encryption</title>
+		<meta name="description" content="RSA Encryption">
+        <meta name="keywords" content="RSA, Encryption, Decryption, Python">
+        <meta name="author" content="Edwin Ledezma">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.navbar {overflow: hidden;
+    background-color: #333;
+    font-family: Arial;}
+.navbar a {float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;}
+.dropdown {float: left;
+    overflow: hidden;}
+.dropdown .dropbtn {font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;}
+.navbar a:hover, .dropdown:hover .dropbtn {background-color: red;}
+.dropdown-content {display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;}
+.dropdown-content a {float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+           body{ background-image: url("http://static.hdw.eweb4.com/media/wallpapers_dl/1/137/1369641-background-minimalist-design.jpg");
+                 background-size:cover;}            
+            h1 { text-align: center; 
+                 font-size: 35px;}
+            h2 {text-align: center;
+                font-size: 20px;}
+			h3 { text-align: center; 
+			     font-size: 35px;
+			     text-decoration: underline;}
+			.response { text-align: center;
+			            font-size: 20px;} 
+			.narration { text-align: center;
+			             font-size: 20px;} 
+			h4 { text-align: center; 
+			     font-size: 35px;}
+			h6 { text-align: center; 
+			     font-size: 35px;}
+			video {display:block;
+			       margin-left: auto;
+			       margin-right: auto;}
+			img {display: block;
+			     margin-left: auto;
+                 margin-right: auto;}
+            a {color: black;}
+            a:hover {color: red}
+</style>
+	</head>
+
+
+<body>
+  <div class="navbar">
+  <a class="index.html" href="index.html">Home</a>
+  <a class="portfolio.html" href="portfolio.html">Portfolio</a>
+  <a class="contact.html" href="contact.html"> Contact</a>
+  <a class="about.html" href="about.html">About Me</a>
+    <div class="dropdown">
+    <button class="dropbtn">Projects 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	  <a class="androidapp.html" href="androidapp.html">Android App</a>
+      <a class="pythonstory.html" href="pythonstory.html">Python Interactive Fiction</a>
+      <a class="pythongame.html" href="pythongame.html">Python Hangman Game</a>
+      <a class="rsa.html" href="rsa.html">RSA Encryption</a>
+    </div>
+  </div> 
+</div>
+<h1>RSA Encryption</h1>
+
+<video height="550px" width="50%" controls>
+    <source src="Videos/PythonHangmanGameVideo.mp4" type="video/mp4">
+    </video>
+<h2><a href="/RSA/main.py" download>Download py file</a>   <a href="https://github.com/edwin-ledezma/RSA" > Link to my respository</a></h2>
+<h3>Video Narration</h3>
+<p class="narration">Video naration goes here.</p>
+<h3>Written Response</h3>
+<p class="response">In order to make our RSA and encrypting code, my partner and I had to make a couple different functions using
+                    Python. First, we made the encryption function. Then, we made a decryption function. Once we had finished coding 
+                    the functions, we decided to test them out. After our first test we noticed that we couldn't decrypt our message
+                    because our encryption function was not encrypting it orrectly. To fix this problem, we realized that we had accidently
+                    switched our "n" and our "e" variables so we named them correctly and resloved the issue. After that, we had to create a 
+                    while loop to control our entire program. After we created it, we found another issue. Our program was stuck in an infinte 
+                    loop and we could not exit it. To fix this problem, I had to code the while loop to loop through only when the user did
+                    not choose the "exit" option. After I resloved this last issue, our program was finished and problem free.</p>
+<h4>Abstraction</h4>
+<img src="RSA/RSAAbstraction.png" height="550" align="middle">
+
+<h6>Algorithm</h6>
+
+<img src="RSA/RSAAlgorithm.png" height="550" align="middle">
+
+<h1>Key Generation</h1>
+
+<img src="RSA/KeyGeneration.png" height="550" align="middle">
+
+
+
+
+</body>
+</html>
