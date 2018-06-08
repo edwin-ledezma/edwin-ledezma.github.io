@@ -2,9 +2,9 @@
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title>RSA Encryption</title>
-		<meta name="description" content="RSA Encryption">
-        <meta name="keywords" content="RSA, Encryption, Decryption, Python">
+		<title>Java GUI</title>
+		<meta name="description" content="Java GUI">
+        <meta name="keywords" content="Java, Java GUI, Java Swing">
         <meta name="author" content="Edwin Ledezma">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
@@ -40,7 +40,7 @@
     text-align: left;}
 .dropdown-content a:hover {background-color: #ddd;}
 .dropdown:hover .dropdown-content {display: block;}
-           body{ background-image: url("http://static.hdw.eweb4.com/media/wallpapers_dl/1/137/1369641-background-minimalist-design.jpg");
+           body{ background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOOt730k1lp9OlFTkV4RLH_eIGKaRTjLG4Ci_c7Ft0aV9ZvRc8");
                  background-size:cover;}            
             h1 { text-align: center; 
                  font-size: 35px;}
@@ -54,8 +54,6 @@
 			.narration { text-align: center;
 			             font-size: 20px;} 
 			h4 { text-align: center; 
-			     font-size: 35px;}
-			h6 { text-align: center; 
 			     font-size: 35px;}
 			img {display: block;
 			     margin-left: auto;
@@ -88,46 +86,39 @@
     </div>
   </div> 
 </div>
-<h1>RSA Encryption</h1>
+<h1>Java GUI</h1>
 
  <video width="50%" height="500px" controls>
-    <source src="Videos/Encryption.mp4" type="video/mp4">
+    <source src="Videos/JavaGUIVideo.mp4" type="video/mp4">
     </video>
     
-<h2><a href="/RSA/main.py" download>Download py file</a>   <a href="https://github.com/edwin-ledezma/RSA" > Link to my respository</a></h2>
+<h2>   <a href="https://github.com/edwin-ledezma/JavaGUI" > Link to my respository</a></h2>
 
 <h3>Video Narration</h3>
 
-<p class="narration">The video shown above shows the running of my program. The first thing I do is call my function by typing what it tells me to.
-                     Next I run the encryption function. After I get my decrypted message, I run my decryption function. I then input my requested values 
-                     and my encrypted message. As expected, I get the same message back after I decrypt it. I then exit my program to show that I 
-                     am not stuck in the while loop. Then I start the program again. </p>
+<p class="narration"> The Video above shows the running of my program.In the beggining it shows the first java window
+                      that has the live time displaying. I then open up the next window so that i can set the alarm time. 
+                      Once I set the alarm you can see that the user input is displayed towards the bottom of the screen. 
+                      Then once the user input and the live clock are at the same time, a dialog box pops up that tells
+                      the user that the alarm is going off.</p>
 
 <h3>Written Response</h3>
 
-<p class="response">In order to make our RSA and encrypting code, my partner and I had to make a couple different functions using
-                    Python. First, we made the encryption function. Then, we made a decryption function. Once we had finished coding 
-                    the functions, we decided to test them out. After our first test we noticed that we couldn't decrypt our message
-                    because our encryption function was not encrypting it orrectly. To fix this problem, we realized that we had accidently
-                    switched our "n" and our "e" variables so we named them correctly and resloved the issue. After that, we had to create a 
-                    while loop to control our entire program. After we created it, we found another issue. Our program was stuck in an infinte 
-                    loop and we could not exit it. To fix this problem, I had to code the while loop to loop through only when the user did
-                    not choose the "exit" option. After I resloved this last issue, our program was finished and problem free.</p>
+<p class="response"> In order to make this alarm clock my partner and I encountered quite a few problems. The first 
+                     problem that we encountered is that we couldn't get a live time to show. We had figured out how to 
+                     show a timestamp but it wouldn't change time. We then realized that we had to create a while loop 
+                     so that every second the clock would get replaced with the current time. Another problem that I encountered 
+                     was that I couldn't get the dialog box to pop up. I realized that the prolem was that I was comparing
+                     the user input as a string and not as an integer. Once i changed the user input to be compared
+                     as an integer the dialog box functioned as planned.</p>
 
 <h4>Abstraction</h4>
 
-<img src="RSA/RSAAbstraction.png" height="550" align="middle">
+<img src="JavaGUI/JavaGUIAbstraction.png" height="550" align="middle">
 
-<h6>Algorithm</h6>
+<h4>Algorithm</h4>
 
-<img src="RSA/RSAAlgorithm.png" height="550" align="middle">
-
-<h1>Key Generation</h1>
-
-<img src="RSA/KeyGeneration.png" height="550" align="middle">
-
-
-
+<img src="JavaGUI/JavaGUIAlgorithm.png" height="550" align="middle">
 
 </body>
 </html>
